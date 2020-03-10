@@ -294,12 +294,8 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
-<<<<<<< HEAD
 PRIMARY_HAL_PATH := $(call project-path-for,qcom-audio)/hal
-ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lito atoll sdm660 msm8937 msm8998 $(MSMSTEPPE) $(TRINKET),$(TARGET_BOARD_PLATFORM)),)
-=======
 ifneq ($(filter sdm845 sdm710 qcs605 sdmshrike msmnile kona lito atoll sdm660 msm8937 msm8998 $(MSMSTEPPE) $(TRINKET),$(TARGET_BOARD_PLATFORM)),)
->>>>>>> 9b5e06a891d1ebc46f310e8a3a6ae87bcdf8e9ab
   # B-family platform uses msm8974 code base
   AUDIO_PLATFORM := msm8974
 endif
